@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d62acd1f0e74fe3bda2ac619de5a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dimensions: {x: 100, y: 100}
+  _dimensions: {x: 15, y: 9}
   _cell: {fileID: 2336420116830810138, guid: 30fde8ec5a0f34eef836023e5f02da6f, type: 3}
 --- !u!4 &8675912
 Transform:

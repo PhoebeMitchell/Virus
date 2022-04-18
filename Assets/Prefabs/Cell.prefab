@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5375808919778126915}
   - component: {fileID: 1079702626297321821}
   - component: {fileID: 2336420116830810138}
+  - component: {fileID: 4830124801264001334}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -95,3 +96,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90127fa210d04a1d9d8730c5f780ef48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rotationTime: 0.25
+  _rotationAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.39683306
+      value: 0.21908768
+      inSlope: 1.286234
+      outSlope: 1.286234
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6693081
+      value: 0.8305525
+      inSlope: 1.3695393
+      outSlope: 1.3695393
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0041809
+      value: 1.0023575
+      inSlope: 0.027167188
+      outSlope: 0.027167188
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.518679
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &4830124801264001334
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747284185464483612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3333334, y: 1.3333334}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3333334, y: 1.3333334}
+  m_EdgeRadius: 0

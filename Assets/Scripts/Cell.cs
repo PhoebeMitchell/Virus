@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Cell
@@ -27,7 +28,8 @@ public class Cell
         {
             CellAllegiance.Friendly => Color.green,
             CellAllegiance.Evil => Color.red,
-            CellAllegiance.Neutral => Color.white
+            CellAllegiance.Neutral => Color.white,
+            _ => throw new ArgumentOutOfRangeException(nameof(allegiance), allegiance, null)
         };
         
         Component.SetColor(color);
