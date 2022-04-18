@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dimensions: {x: 15, y: 9}
   _cell: {fileID: 2336420116830810138, guid: 30fde8ec5a0f34eef836023e5f02da6f, type: 3}
+  _connector: {fileID: 6890264447916813875, guid: 1ffd2d1c919ac485daa2f64938811be7, type: 3}
 --- !u!4 &8675912
 Transform:
   m_ObjectHideFlags: 0

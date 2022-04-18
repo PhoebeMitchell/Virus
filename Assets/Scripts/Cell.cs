@@ -10,14 +10,26 @@ public class Cell
         Neutral,
     }
 
-    private CellAllegiance _allegiance = CellAllegiance.Neutral;
-    
-    public Vector2 Position { get; }
-    public CellComponent Component { private get; set; }
+    public class CellConnectors
+    {
+        public Connector Left { get; set; }
+        public Connector Right { get; set; }
+        public Connector Up { get; set; }
+        public Connector Down { get; set; }
+    }
 
-    public Cell(Vector2 position)
+    private CellAllegiance _allegiance = CellAllegiance.Neutral;
+    private Field _field;
+
+    public Vector2Int Position { get; }
+    public CellComponent Component { get; set; }
+    public CellConnectors Connectors { get; } = new CellConnectors();
+    public bool IsVisited { get; set; }
+    
+    public Cell(Vector2Int position, Field field)
     {
         Position = position;
+        _field = field;
     }
 
     public void SetAllegiance(CellAllegiance allegiance)
@@ -33,5 +45,14 @@ public class Cell
         };
         
         Component.SetColor(color);
+    }
+
+    public void Fill(CellAllegiance cellAllegiance)
+    {
+        if (IsVisited) { return; }
+        SetAllegiance(cellAllegiance);
+        var cell = _field.GetCellAtPosition(Position + Vector2Int.RoundToInt(Component.transform.right));
+        IsVisited = true;
+        cell?.Fill(cellAllegiance);
     }
 }
